@@ -36,6 +36,7 @@
 				array('label'=>'Home', 'url'=>array('/admin/tblusers/view1'),'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Admin Users', 'url'=>array('/admin/tblusers/admin'), 'visible'=>Yii::app()->user->checkAccess('admin@TblusersAdministrating')),
 				array('label'=>'Login', 'url'=>array('/admin/tblusers/index'), 'visible'=>Yii::app()->user->isGuest),
+				array('label'=>'Email Template', 'url'=>array('/admin/emailTemplate/admin'), 'visible'=>Yii::app()->user->checkAccess('admin@EmailTemplateAdministrating')),
 				array('label'=>'Accessibility Controll', 'url'=>array('/srbac/authitem/assign'), 'visible'=>Yii::app()->user->checkAccess('admin@TblusersAdministrating')),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/admin/tblusers/logout'), 'visible'=>!Yii::app()->user->isGuest),
 			),
